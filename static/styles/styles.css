@@ -1,0 +1,55 @@
+body {
+    background-color: lightblue;
+}
+#bird {
+    width: 350px;
+    height: 300px;
+}
+#hashtag {
+    width: 400px;
+    height: 445px;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
+    padding-right: 20px;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+.left {
+    width: 25%;
+}
+.middle {
+    width: 40%;
+}
+.right {
+    width: 25%;
+}
+
+#title {
+    text-align: center;
+    color: dodgerblue;
+}
+#info {
+    text-align: center;
+    color: black;
+}
+#title2 {
+    text-align: center;
+    color: dodgerblue;
+    margin-left: 70px;
+}
+#info2 {
+    text-align: center;
+    color: black;
+    margin-left: 70px;
+    margin-top: 280px;
+}
+.button-container-div {
+    text-align: center;
+}

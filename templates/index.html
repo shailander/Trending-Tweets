@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Twitter Trends</title>
+</head>
+
+<body>
+    <h1 id="title"> Trending Tweets</h1>
+    <h3 id="info">Country/City : {{name}}</h3>
+    <div class="row">
+        <div class="column left">
+            <img src="{{url_for('static', filename='images/bird.png')}}" id="bird"/>
+        </div>
+        <div class="column middle">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Tweet</th>
+                    <th>Count</th>
+                </tr>
+                {%for item in data%}
+                <tr>
+                    <td>{{item.number}}</td>
+                    <td>{{item.tweet}}</td>
+                    <td>{{item.count}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <div class="column right">
+            <img src="{{url_for('static', filename='images/hashtag.png')}}" id="hashtag"/>
+        </div>
+    </div>
+</body>
+
+</html>

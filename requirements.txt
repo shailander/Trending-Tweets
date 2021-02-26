@@ -1,0 +1,5 @@
+Flask
+Gunicorn
+tweepy
+camelcase
+python-dotenv
